@@ -1,0 +1,149 @@
+/* ===============================
+   GENERAL BODY STYLING
+================================ */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* IMPORTANT */
+}
+
+/* ===============================
+   CENTER CONTAINER
+================================ */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ===============================
+   LOGIN & SEARCH BOX (SMALL)
+================================ */
+.login-container.small {
+    width: 350px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* Heading */
+.login-container h2 {
+    color: #007bff;
+    margin-bottom: 25px;
+}
+
+/* Inputs */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button */
+.login-container button {
+    width: 95%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Error */
+#error {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ===============================
+   PATIENT DETAILS (BIG)
+================================ */
+.login-container.large {
+    width: 90%;
+    max-width: 1200px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+/* ===============================
+   TABLE
+================================ */
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #007bff;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+/* LOGOUT BUTTON */
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 14px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.logout-btn:hover {
+    background-color: #b52a37;
+}
+/* Hospital splash logo */
+.hospital-logo {
+    width: 80px;
+    height:auto;
+}
+.back-btn {
+    display: inline-block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}

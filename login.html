@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Health Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- CENTER WRAPPER (THIS FIXES MIDDLE ISSUE) -->
+    <div class="center-container">
+
+        <!-- LOGIN BOX (SMALL SIZE) -->
+        <div class="login-container small">
+            <h2>Health Patient Dashboard</h2>
+
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+
+            <button onclick="login()">Login</button>
+            <p id="error"></p>
+        </div>
+
+    </div>
+
+    <script>
+        function login() {
+            var user = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+
+            if (user === "admin" && pass === "admin123") {
+                window.location.href = "search.html";
+            } else {
+                document.getElementById("error").innerText =
+                    "Invalid username or password";
+            }
+        }
+    </script>
+
+</body>
+</html>

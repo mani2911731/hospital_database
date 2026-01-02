@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Patient - Health Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Center content */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            height: 100vh;
+            margin:0;
+        }
+        .search-box {
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            background-color: #fff;
+            padding: 30px;
+            border-radius:10px;
+            box-shadow: 0 0 10px #aaa;
+            text-align:center;
+        }
+        input[type=text] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .logout-btn{
+            position:fixed;
+            top:20px;
+            right:20px;
+            background-color:#dc3545;
+            color:white;
+            width:40px;
+            height:40px;
+            line-height:40px;
+            text-align:center;
+            border-radius:50%;
+            text-decoration: none;
+            font-size:16px;
+            font-weight:bold;
+            z-index:999;
+        }
+        .logout-btn:hover{
+            background-color:#b52a37;
+        }
+    </style>
+</head>
+<body>
+<a href="logout.php" class="logout-btn">logout</a>
+<div class="search-box">
+    <h2>Search Patient</h2>
+    <form action="http://localhost/hospital/backend/search.php"method="GET">
+        <input type="text" name="patient_id" placeholder="Enter Patient ID or Name" required>
+        <br>
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+</body>
+</html>
